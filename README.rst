@@ -30,8 +30,8 @@ Man Pages
 Consult the following man pages for detailed, up-to-date information on configuration
 file settings and command-line arguments:
 
-.. _boot-update(8): doc/boot-update.8.html
-.. _boot.conf(5): doc/boot.conf.5.html
+.. _boot-update(8): doc/boot-update.8.rst
+.. _boot.conf(5): doc/boot.conf.5.rst
 
 - `boot-update(8)`_
 - `boot.conf(5)`_
@@ -88,5 +88,5 @@ Re-run ``boot-update`` every time your available kernels/initrds or ``/etc/boot.
 configuration changes.
 
 
-.. include:: ./LICENSE
+.. literalinclude:: ./LICENSE
 
