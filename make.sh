@@ -29,18 +29,19 @@ web() {
 	cd /root/git/website && git add archive/boot-update/* && git commit -a -m "new boot-update $VERSION" && git push
 }
 
-if [ "$1" = "prep" ]
-then
-	prep
-elif [ "$1" = "commit" ]
-then
-	commit
-elif [ "$1" = "web" ]
-then
-	web
-elif [ "$1" = "all" ]
-then
-	prep
-	commit
-	web
-fi
+case "$1" in
+	"prep")
+		prep ;;
+	"commit")
+		commit ;;
+	"web")
+		web ;;
+	"all")
+		prep
+		commit
+		web
+		;;
+	*)
+		;;
+esac
+
